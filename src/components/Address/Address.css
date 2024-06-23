@@ -1,0 +1,81 @@
+.address {
+  background: var(--clr-almost-black);
+  color: var(--clr-white);
+}
+
+.address-wrapper {
+  width: min(90%, 1110px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 104px;
+  padding-bottom: 128px;
+}
+
+.address-title {
+  max-width: 350px;
+}
+
+.address-column {
+  max-width: 540px;
+}
+
+.address-street {
+  color: var(--clr-gold);
+  margin-bottom: 24px;
+}
+
+.address-address {
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 960px) {
+  .address-wrapper {
+    padding-top: 88px;
+    padding-bottom: 80px;
+  }
+  .address-title {
+    font-size: 55px;
+    max-width: 250px;
+  }
+
+  .address-column {
+    max-width: 398px;
+  }
+
+  .address-street {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .address-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .address-wrapper {
+    flex-direction: column;
+    padding-top: 48px;
+    padding-bottom: 56px;
+  }
+
+  .address-title {
+    font-size: 50px;
+    max-width: 400px;
+    margin-bottom: 48px;
+  }
+
+  .address-street {
+    margin-bottom: 20px;
+  }
+
+  .address-address {
+    margin-bottom: 20px;
+  }
+
+  .address-instructions {
+    max-width: 343px;
+  }
+}
