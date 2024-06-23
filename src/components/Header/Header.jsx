@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css";
+import "./Header.scss";
 
 import { Link } from "react-router-dom";
 
@@ -15,8 +15,8 @@ const Header = () => {
     <header className="header">
       <section className="hero">
         <img className="hero-image" src={heroImage} alt={imageAlt} />
-        <img className="hero-image_tab" src={heroImageTablet} alt={imageAlt} />
-        <img className="hero-image_mob" src={heroImageMobile} alt={imageAlt} />
+        <img className="hero-image-tab" src={heroImageTablet} alt={imageAlt} />
+        <img className="hero-image-mob" src={heroImageMobile} alt={imageAlt} />
         <h1 className="hero-title heading-xl">
           modern <span className="hero-title-span">art gallery</span>
         </h1>

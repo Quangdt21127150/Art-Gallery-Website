@@ -1,5 +1,5 @@
 import React from "react";
-import "./Address.css";
+import "./Address.scss";
 
 const Address = () => {
   return (

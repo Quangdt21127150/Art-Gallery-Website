@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import arrowLeft from "../../assets/images/icon-arrow-left.svg";
-import "./MapSection.css";
+import "./MapSection.scss";
 import "leaflet/dist/leaflet.css";
 
 import icon from "../../assets/images/icon-location.svg";

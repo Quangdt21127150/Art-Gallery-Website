@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "./Footer.scss";
 
 import Icon from "../Icon/Icon";
 import { useLocation } from "react-router-dom";
@@ -24,7 +24,7 @@ const Footer = () => {
               className={
                 location.pathname === "/"
                   ? "social-icon-button"
-                  : "social-icon-button_location"
+                  : "social-icon-button-location"
               }
             >
               <Icon
@@ -41,7 +41,7 @@ const Footer = () => {
               className={
                 location.pathname === "/"
                   ? "social-icon-button"
-                  : "social-icon-button_location"
+                  : "social-icon-button-location"
               }
             >
               <Icon
@@ -58,7 +58,7 @@ const Footer = () => {
               className={
                 location.pathname === "/"
                   ? "social-icon-button"
-                  : "social-icon-button_location"
+                  : "social-icon-button-location"
               }
             >
               <Icon

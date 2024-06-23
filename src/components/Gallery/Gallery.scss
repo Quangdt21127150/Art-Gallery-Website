@@ -1,0 +1,196 @@
+.gallery {
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-bottom: 180px;
+}
+
+.your-day {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 7.8125rem;
+
+  &-content {
+    max-width: 350px;
+  }
+
+  &-text {
+    color: var(--clr-dark-gray);
+    margin-top: 32px;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+  &-image {
+    height: 400px;
+    object-fit: cover;
+
+    &-container {
+      flex-basis: 100%;
+      flex: 2;
+    }
+  }
+}
+
+.inspired {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+
+  &-column {
+    &-one {
+      flex-basis: auto;
+    }
+
+    &-two {
+      flex-basis: auto;
+    }
+  }
+
+  &-image {
+    &-l {
+      max-width: 635px;
+      height: 720px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &-m {
+      height: 313px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-content {
+    margin-top: 30px;
+    background: var(--clr-almost-black);
+    color: var(--clr-white);
+    padding: 65px 47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-title {
+    margin-bottom: 32px;
+  }
+
+  &-text {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .gallery {
+    padding: 0 40px;
+    margin-bottom: 120px;
+  }
+
+  .your-day {
+    gap: 4.25rem;
+
+    &-image {
+      width: 600px;
+    }
+
+    &-content {
+      max-width: 223px;
+    }
+
+    &-title {
+      font-size: 50px;
+    }
+
+    &-text {
+      margin-top: 24px;
+      font-size: 18px;
+    }
+  }
+
+  .inspired {
+    gap: 11px;
+    margin-top: 11px;
+
+    &-content {
+      margin-top: 11px;
+      padding: 85px 28px;
+      height: 396px;
+    }
+
+    &-title {
+      margin-bottom: 24px;
+    }
+  }
+
+  .text-m {
+    font-size: 18px;
+  }
+
+  .heading-m {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .gallery {
+    padding: 0 16px;
+  }
+
+  .your-day {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0;
+
+    &-image {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    &-content {
+      max-width: 600px;
+    }
+
+    &-title {
+      margin-top: 25px;
+
+      span {
+        display: block;
+      }
+    }
+
+    &-text {
+      margin-top: 21px;
+    }
+  }
+
+  .inspired {
+    flex-direction: column;
+    gap: 16px;
+
+    &-image {
+      &-l {
+        height: 480px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      &-m {
+        height: 313px;
+        object-fit: cover;
+      }
+    }
+
+    &-content {
+      margin-top: 16px;
+      padding: 48px 24px;
+      height: 293px;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Gallery.css";
+import "./Gallery.scss";
 
 import galleryImage1 from "../../assets/images/desktop/image-grid-1@2x.jpg";
 import galleryImage2 from "../../assets/images/desktop/image-grid-2@2x.jpg";
@@ -27,20 +27,20 @@ const Gallery = () => {
         </div>
       </div>
       <div className="inspired">
-        <div className="inspired-column_one">
+        <div className="inspired-column-one">
           <img
             className="inspired-image-l"
             src={galleryImage2}
             alt="gallery image"
           />
         </div>
-        <div className="inspired-column_two">
+        <div className="inspired-column-two">
           <img
             className="inspired-image-m"
             src={galleryImage3}
             alt="gallery image"
           />
-          <div className="inpired-content">
+          <div className="inspired-content">
             <h2 className="inspired-title heading-m">
               COME & <br /> BE INSPIRED
             </h2>
